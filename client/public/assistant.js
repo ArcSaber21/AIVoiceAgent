@@ -18,7 +18,7 @@
 
     link.rel = "stylesheet"
 
-    link.href = "http://localhost:5173/assistant.css"
+    link.href = "https://wishai.onrender.com/assistant.css"
 
     document.head.appendChild(link)
 
@@ -83,7 +83,7 @@
             <button class="Wish-mic">
 
                <img 
-               src="http://localhost:5173/mic.svg"
+               src="https://wishai.onrender.com/mic.svg"
                alt="mic"
                class="Wish-mic-icon"/>
             </button>
@@ -102,7 +102,7 @@
 
     button.innerHTML = `
     <img 
-    src="http://localhost:5173/logo.jpg"
+    src="https://wishai.onrender.com/logo.jpg"
     alt="logo"
     />`;
     document.body.appendChild(button)
