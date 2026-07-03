@@ -11,7 +11,18 @@
 ![Firebase](https://img.shields.io/badge/Firebase-Authentication-FFCA28?style=for-the-badge\&logo=firebase)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=for-the-badge\&logo=tailwindcss)
 
+### 🚀 Live Demo
+
+**🔗 https://wishai.onrender.com/**
+
 </div>
+
+---
+
+## 📌 Quick Links
+
+* 🌐 **Live Demo:** https://wishai.onrender.com/
+* 💻 **Repository:** https://github.com/ArcSaber21/AIVoiceAgent
 
 ---
 
@@ -23,7 +34,7 @@ Users can sign in using Google, describe their business, choose an assistant per
 
 The project is built as a **monorepo** consisting of:
 
-```
+```text
 client/   → React Dashboard
 server/   → Node.js + Express Backend
 ```
@@ -67,7 +78,7 @@ server/   → Node.js + Express Backend
 * Automatic API Key Validation
 * Live API Status
 
-```
+```text
 ✅ Active
 ❌ Invalid
 ⚠️ Quota Exceeded
@@ -81,7 +92,7 @@ Allow visitors to navigate your website naturally.
 
 Examples:
 
-```
+```text
 "Open Pricing"
 → /pricing
 
@@ -97,6 +108,12 @@ Examples:
 ## ⚡ Easy Website Integration
 
 Embed the assistant into **any website** with a single script.
+
+No React.
+
+No framework.
+
+Works with any website.
 
 ---
 
@@ -124,7 +141,7 @@ Embed the assistant into **any website** with a single script.
 
 ## Frontend
 
-* React 
+* React
 * Tailwind CSS
 
 ---
@@ -207,7 +224,7 @@ cd AIVoiceAgent
 
 ---
 
-# 2. Server Setup
+## 2. Server Setup
 
 ```bash
 cd server
@@ -219,13 +236,9 @@ Create a `.env` file inside the **server** directory.
 
 ```env
 PORT=5000
-
 MONGODB_URL=your_mongodb_connection_string
-
 JWT_SECRET=your_jwt_secret
-
 RAZORPAY_KEY_ID=your_razorpay_key
-
 RAZORPAY_KEY_SECRET=your_razorpay_secret
 ```
 
@@ -237,7 +250,7 @@ npm run dev
 
 ---
 
-# 3. Client Setup
+## 3. Client Setup
 
 ```bash
 cd client
@@ -261,9 +274,9 @@ npm run dev
 
 # 🌍 Embedding the Assistant
 
-After creating and configuring your AI assistant from the dashboard, you will receive your **User ID**.
+After creating and configuring your AI assistant from the dashboard, you'll receive your **User ID**.
 
-Open your website's **`index.html`** file and paste the following code **inside the `<body>` tag, just before the closing `</body>` tag.**
+Open your website's **`index.html`** file and paste the following code **inside the `<body>` tag, just above the closing `</body>` tag.**
 
 ```html
 <body>
@@ -271,16 +284,16 @@ Open your website's **`index.html`** file and paste the following code **inside 
     <!-- Your Website Content -->
 
     <script
-        src="https://your-domain.com/assistant.js"
+        src="https://wishai.onrender.com/assistant.js"
         data-user-id="YOUR_USER_ID">
     </script>
 
 </body>
 ```
 
-> **Important:** The script should be placed **above the closing `</body>` tag** to ensure the widget loads after your website content and does not block page rendering.
+> **Important:** Place the script **immediately above the closing `</body>` tag**. This ensures the widget loads after the page content, improving performance and avoiding render blocking.
 
-Once added, the assistant automatically loads your configuration and becomes available to visitors.
+Once added, the assistant automatically loads your configuration and becomes available to your website visitors.
 
 ---
 
